@@ -1,0 +1,14 @@
+[
+    {
+      "caption": "Toggle read/edit mode: Readonly",
+      "command": "set_readonly"
+    },
+    {
+      "caption": "Toggle read/edit mode: Writable",
+      "command": "set_writable"
+    },
+    {
+      "caption": "Toggle read/edit mode: Toggle Auto Readonly",
+      "command": "toggle_auto_readonly"
+    }
+]

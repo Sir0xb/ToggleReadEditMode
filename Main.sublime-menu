@@ -1,0 +1,16 @@
+[
+    {
+        "id": "view",
+        "children":
+        [
+            {
+                "caption": "Toggle read/edit mode",
+                "children": [
+                    { "caption": "Readonly", "command": "set_readonly" },
+                    { "caption": "Writable", "command": "set_writable" },
+                    { "caption": "Toggle Auto Readonly", "command": "toggle_auto_readonly" }
+                ]
+            }
+        ]
+    }
+]

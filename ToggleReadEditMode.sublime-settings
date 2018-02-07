@@ -1,0 +1,4 @@
+{
+	"readonly_default" : true,	// 打开文件是否默认只读
+	"deactivated_lock" : false 	// 文件失去焦点是否自动锁定只读
+}
