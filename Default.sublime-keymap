@@ -1,0 +1,8 @@
+[
+    { "keys": ["d"], "command": "open_auto_completion", "args": {"keystroke": "d" } },
+    { "keys": ["g"], "command": "open_auto_completion", "args": {"keystroke": "g" } },
+    { "keys": ["G"], "command": "open_auto_completion", "args": {"keystroke": "G" } },
+    { "keys": ["j"], "command": "open_auto_completion", "args": {"keystroke": "j" } },
+    { "keys": ["k"], "command": "open_auto_completion", "args": {"keystroke": "k" } },
+    { "keys": ["u"], "command": "open_auto_completion", "args": {"keystroke": "u" } }
+]

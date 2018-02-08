@@ -26,6 +26,29 @@ class ToggleReadEditModeListener(sublime_plugin.EventListener):
 		if settings.get("deactivated_lock"):
 			view.set_read_only(True)
 
+class OpenAutoCompletionCommand(sublime_plugin.TextCommand):
+	def run(self, edit, **kargs):
+		if self.view.is_read_only():
+			# 向下滚动
+			if kargs["keystroke"] == "j":
+				self.view.run_command("scroll_lines", { "amount": -3.0 })
+			if kargs["keystroke"] == "d":
+				self.view.run_command("scroll_lines", { "amount": -10.0 })
+
+			# 向上滚动
+			if kargs["keystroke"] == "k":
+				self.view.run_command("scroll_lines", { "amount": 3.0 })
+			if kargs["keystroke"] == "u":
+				self.view.run_command("scroll_lines", { "amount": 10.0 })
+
+			# 顶部 / 底部
+			if kargs["keystroke"] == "g":
+				self.view.run_command("scroll_lines", { "amount": 50000.0 })
+			if kargs["keystroke"] == "G":
+				self.view.run_command("scroll_lines", { "amount": -50000.0 })
+		else:
+			self.view.run_command("insert", { "characters": kargs["keystroke"] })
+
 class SetReadonlyCommand(sublime_plugin.TextCommand):
 	def run(self, edit):
 		self.view.set_read_only(True)
