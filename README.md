@@ -21,6 +21,14 @@
 { "keys": ["command+shift+i"], "command": "set_readonly" },
 { "keys": ["command+shift+e"], "command": "set_readonly" },
 ```
+> 如果是只读模式
+
+* j - 缓冲区下移3行
+* k - 缓冲区上移3行
+* d - 缓冲区下移10行
+* u - 缓冲区上移10行
+* g - 缓冲区下移50000行(返回顶部)
+* G - 缓冲区下移50000行(置于底部)
 
 ## License
 
